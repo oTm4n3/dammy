@@ -1,4 +1,4 @@
-name: dammy-dumper
+name: oTm4n3-Dumper
 
 on: workflow_dispatch
 
@@ -6,15 +6,14 @@ jobs:
   build:
 
     runs-on: windows-latest
-    timeout-minutes: 15768000
+    timeout-minutes: 157680000
 
     steps:
     - name: Downloading Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/oTm4n3/dammy/main/start.bat
-        -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/oTm4n3/dammy/main/wallpaper.bat -OutFile wallpaper.jpg
+        Invoke-WebRequest https://raw.githubusercontent.com/oTm4n3/dammy/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/oTm4n3/dammy/main/wallpaper.jpg -OutFile wallpaper.jpg
         Invoke-WebRequest https://raw.githubusercontent.com/oTm4n3/dammy/main/wallpaper.bat -OutFile wallpaper.bat
     - name: Extracting Ngrok Files.
       run: Expand-Archive ngrok.zip
