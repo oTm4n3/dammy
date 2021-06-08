@@ -1,4 +1,4 @@
-name: 
+name: dammy-dumper
 
 on: workflow_dispatch
 
