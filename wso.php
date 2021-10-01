@@ -1,4 +1,4 @@
-<?php
+oTm4n3<?php
 //-----------------Password---------------------
 $_password = "92b70a527191ca64ca2df1cc32142646"; //fck You
 $_agent = true;
